@@ -19,6 +19,9 @@ public static class Registration
             });
         });
 
+        // SEEDING DATA INITIAL FOR TESTING
+        // UNCOMMENT THIS LINES FOR SEED DATA FIRST TIME
+
         //var seedData = new SeedData();
         //seedData.SeedAsync(configuration).GetAwaiter().GetResult();
 
