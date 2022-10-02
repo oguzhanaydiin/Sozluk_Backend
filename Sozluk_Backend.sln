@@ -28,21 +28,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorWeb", "BlazorWeb", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Api\Core\OzSozluk.Api.Application\Application\Application.csproj", "{4592CD90-540D-4CD8-AFB2-E0906BA6A65F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "src\Common\OzSozluk.Common\Common\Common.csproj", "{2387923A-68D1-42AA-A643-8E85605D151B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "src\Common\OzSozluk.Common\Common\Common.csproj", "{2387923A-68D1-42AA-A643-8E85605D151B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Api\Core\OzSozluk.Api.Domain\Domain\Domain.csproj", "{73CE0223-0FDD-4DF1-9135-6A25E8F1E5FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Api\Core\OzSozluk.Api.Domain\Domain\Domain.csproj", "{73CE0223-0FDD-4DF1-9135-6A25E8F1E5FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "src\Api\Infrastructure\OzSozluk.Infrastructure.Persistence\Persistence\Persistence.csproj", "{EA1AC03A-6E1B-4610-8904-2C228878408E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\Api\Infrastructure\OzSozluk.Infrastructure.Persistence\Persistence\Persistence.csproj", "{EA1AC03A-6E1B-4610-8904-2C228878408E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\Api\WebApi\OzSozluk.Api.WebApi\WebApi\WebApi.csproj", "{CA9A9BA3-5B36-4B52-825E-7BE014984D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\Api\WebApi\OzSozluk.Api.WebApi\WebApi\WebApi.csproj", "{CA9A9BA3-5B36-4B52-825E-7BE014984D0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FavoriteWorker", "src\Projections\OzSozluk.Projections.FavoriteWorker\FavoriteWorker\FavoriteWorker.csproj", "{0472E7B4-10A4-4FB7-AFC9-6A6C3255DF8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FavoriteWorker", "src\Projections\OzSozluk.Projections.FavoriteWorker\FavoriteWorker\FavoriteWorker.csproj", "{0472E7B4-10A4-4FB7-AFC9-6A6C3255DF8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserWorker", "src\Projections\OzSozluk.Projections.UserWorker\UserWorker\UserWorker.csproj", "{9EF9EB5B-5BDD-4613-BD65-148B7D6B3256}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserWorker", "src\Projections\OzSozluk.Projections.UserWorker\UserWorker\UserWorker.csproj", "{9EF9EB5B-5BDD-4613-BD65-148B7D6B3256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteWorker", "src\Projections\OzSozluk.Projections.VoteWorker\VoteWorker\VoteWorker.csproj", "{F0086726-9A05-49F0-AC31-8FCCA4D43D79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoteWorker", "src\Projections\OzSozluk.Projections.VoteWorker\VoteWorker\VoteWorker.csproj", "{F0086726-9A05-49F0-AC31-8FCCA4D43D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "src\Clients\BlazorWeb\OzSozluk.WebApp\WebApp\WebApp.csproj", "{2FFB116A-3583-4CE1-BA2D-CDE8B648172B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "src\Clients\BlazorWeb\OzSozluk.WebApp\WebApp\WebApp.csproj", "{2FFB116A-3583-4CE1-BA2D-CDE8B648172B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5A0CB9FC-22A4-4E2F-8C26-0B487C0F6552}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,10 @@ Global
 		{2FFB116A-3583-4CE1-BA2D-CDE8B648172B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FFB116A-3583-4CE1-BA2D-CDE8B648172B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FFB116A-3583-4CE1-BA2D-CDE8B648172B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0CB9FC-22A4-4E2F-8C26-0B487C0F6552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0CB9FC-22A4-4E2F-8C26-0B487C0F6552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0CB9FC-22A4-4E2F-8C26-0B487C0F6552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0CB9FC-22A4-4E2F-8C26-0B487C0F6552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

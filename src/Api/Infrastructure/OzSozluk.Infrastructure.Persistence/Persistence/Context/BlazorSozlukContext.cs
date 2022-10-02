@@ -33,7 +33,7 @@ public class BlazorSozlukContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            var connStr = "Data Source=localhost\\sqltest,1401;Initial Catalog=Sozluk;Persist Security Info=True;User ID=sa;Password=test@123";
+            var connStr = "Data Source=sqltest;Initial Catalog=Sozluk;Persist Security Info=True;User ID=sa;Password=test@123";
             optionsBuilder.UseSqlServer(connStr, opt =>
             {
                 opt.EnableRetryOnFailure();

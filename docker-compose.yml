@@ -1,0 +1,47 @@
+version: '3.4'
+
+services:
+  webapi:
+    container_name: cblazorsozluk_api
+    image: ${DOCKER_REGISTRY-}webapi
+    build:
+      context: .
+      dockerfile: src/Api/WebApi/OzSozluk.Api.WebApi/WebApi/Dockerfile
+
+
+
+
+  webapp:
+    container_name: cblazorsozluk_webapp
+    image: ${DOCKER_REGISTRY-}webapp
+    build:
+      context: .
+      dockerfile: src/Clients/BlazorWeb/OzSozluk.WebApp/WebApp/Dockerfile
+
+
+
+
+
+  voteworker:
+    container_name: cblazorsozluk_vote
+    image: ${DOCKER_REGISTRY-}voteworker
+    build:
+      context: .
+      dockerfile: src/Projections/OzSozluk.Projections.VoteWorker/VoteWorker/Dockerfile
+
+
+  userworker:
+    container_name: cblazorsozluk_user
+    image: ${DOCKER_REGISTRY-}userworker
+    build:
+      context: .
+      dockerfile: src/Projections/OzSozluk.Projections.UserWorker/UserWorker/Dockerfile
+
+
+  favoriteworker:
+    container_name: cblazorsozluk_favorite
+    image: ${DOCKER_REGISTRY-}favoriteworker
+    build:
+      context: .
+      dockerfile: src/Projections/OzSozluk.Projections.FavoriteWorker/FavoriteWorker/Dockerfile
+

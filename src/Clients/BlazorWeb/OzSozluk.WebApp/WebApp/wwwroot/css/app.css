@@ -232,3 +232,18 @@ label {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+.flex-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.float-left {
+    float:left;
+}
+
+.fixed-topbar {
+    position: sticky;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}

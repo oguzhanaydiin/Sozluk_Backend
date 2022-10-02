@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="navbar fixed-top text-white">
+<div class="navbar fixed-topbar text-white">
 
     <div class="logo">
         <a href="/" class="bg-white">
@@ -10,22 +10,22 @@
 
     <div class="search-box">
 
-        <div class="input-group">
-            <div class="form-outline">
-                <input type="search"
-                       class="form-control small"
-                       @bind-value="@searchText"
-                       @bind-value:event="oninput"
-                       @onkeypress="@SearchKeyDown"
-                       @onfocusout="@OnSearchFocusOut"
-                       placeholder="Search in Sozluk" />
-            </div>
+        <div class="input-group flex-container">
+            <input type="search"
+                    class="form-control small"
+                    @bind-value="@searchText"
+                    @bind-value:event="oninput"
+                    @onkeypress="@SearchKeyDown"
+                    @onfocusout="@OnSearchFocusOut"
+                    placeholder="Search in Sozluk" />
 
             <button type="button" class="btn btn-sozluk btn-success"
                     @onclick="@Search"
                     @onfocusout="@OnSearchFocusOut">
                 <i class="fa fa-search h-75"></i>
             </button>
+
+            
         </div>
 
         @if (showSearchResult)
@@ -90,9 +90,6 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
 
         <article class="content px-4">
             @Body
@@ -102,7 +99,7 @@
 
 @code
 {
-    private EntriesComponent entriesComponent;
+    private EntriesComponent? entriesComponent;
     private string searchText;
     private bool showSearchResult;
     private List<SearchEntryViewModel> searchResults = new List<SearchEntryViewModel>();
